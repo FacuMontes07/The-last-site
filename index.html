@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The last site</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+    <!-- CDN from Fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="">
+            </div>
+    
+        <div class="overlay" id="myNav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            &times;</a>
+            <div class="overlay-content">
+                <a href="#intro">Home</a>
+                <a href="#tools">My skills</a>
+                <a href="#why-use">Why a web</a>
+                <a href="#contact-form">Contact me</a>
+            </div>
+        </div>
+        <i class="fas fa-bars" onclick="openNav()"></i>
+    </div>
+    </header>
+        
+    <section class="intro" id="intro"> 
+        <div class="title">
+            <h1>Montes Development</h1>
+        </div>
+    </section>
+
+    <section class="more-about" id="more-about">
+        <div class="container">
+            <div class="parragraph">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda eveniet dignissimos voluptates perspiciatis aliquam, nobis provident quisquam sed deserunt voluptas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools" id="tools">
+        <div class="container">
+            <div class="title-container">
+                <h2>My skills</h2>
+            </div>
+            <div class="parragraph">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad beatae pariatur adipisci unde, suscipit odit provident eligendi fugiat voluptates blanditiis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-use" id="why-use">
+        <div class="container">
+            <div class="title-container">
+                <h2>Why a web</h2>
+            </div>
+            <div class="parragraph">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur temporibus amet quo eveniet in deleniti est nesciunt id impedit commodi.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-form" id="contact-form">
+        <div class="container">
+            <div class="title-container">
+                <h2>Contact me!</h2>
+            </div>
+            <form action="" method="post" class="formulario">
+                <input type="text" name="name" placeholder="Juan Perez" id="usuario" autocomplete="off" required> <br>
+                <input type="email" name="email" placeholder="example@email.com" autocomplete="off" id="email" required> <br>
+                <input type="text" name="text" placeholder="Write your message" id="text" autocomplete="off" required> <br>
+                <input type="submit" value="Enviar" class="submit-button" id="enviar" onclick="hizoClick()">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-title">
+                <h2 class="footer-title-1">Follow me</h2>
+            </div>
+            <div class="redes-sociales">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+     <script src="js/menu-toggle.js"></script>
+     <script src="js/formulario.js"></script>
+</body>
+</html>

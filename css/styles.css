@@ -1,0 +1,239 @@
+/*#252525
+  #6930c3
+  #64dfdf
+  #80ffdb
+*/
+
+/* center everything
+display: flex;
+align-items: center;
+justify-content: center;
+*/
+
+/*import from google fonts
+font-family: 'Montserrat', sans-serif; h1 h2
+font-family: 'Poppins', sans-serif; p
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: #252525;
+    width: 100%;
+    height: 70px;
+    color: #ffffff
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif; 
+    color: #ffffff
+}
+h2{
+    float:right;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    font-size: 20px; 
+}
+a{
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(50,36,101,1) 40%, rgba(109,25,111,1) 100%);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-content{
+    position:relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    text-align: justify;
+    left: 70px;
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color:#ffffff;
+    display: block;
+    transition: 0.3s;
+    height: 75px
+}
+.overlay a:hover,
+.overlay a:focus{
+    color: black;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: -10px;
+    right: 12px;
+    font-size: 90px;
+}
+.fas{
+    float: right;
+    font-size: 35px;
+    margin: -55px 15px 0px 0px;
+    color:#ffffff
+}
+
+.logo img{
+    width: 70px;
+}
+
+.container{
+    width: 80%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.intro{
+    background: #6930c3;
+    height: 10vh;
+    z-index: 0;
+    text-align: center;
+    font-size: 20px;
+}
+.title{
+    padding-top: 20px
+}
+.title-container{
+    padding-top: 15px;
+    margin-bottom: 35px;
+}
+.parragraph{
+    padding-top: 15px;
+}
+
+.more-about{
+    position: relative;
+    background: #64dfdf;
+    height: 30vh;
+    z-index: 0;
+}
+.tools{
+    position: relative;
+    background: #80ffdb;
+    height: 35vh;
+    margin-top: 8%;
+    z-index: 0;
+    
+}
+.why-use{
+    position: relative;
+    background: #64dfdf;
+    height: 35vh;
+    margin-top: 12%;
+    z-index: 0;
+    
+}
+.contact-form{
+    position: relative;
+    background: #80ffdb;
+    height: 40vh;
+    margin-top: 12%;
+    z-index: 0;
+    
+}
+input{
+    width: 260px;
+    height: 30px;
+    margin: 16px 0px 0px 0px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid black;
+    
+}
+.submit-button{
+    background:#6930c3;
+    width: 120px;
+    color: #ffffff;
+}
+footer{
+    background: #252525;
+    width: 100%;
+    height: 20vh;
+    color: #ffffff;
+}
+.footer-title, .footer-title-1{
+    float:initial;
+}
+.redes-sociales{
+    font-size: 45px;
+    text-align: center;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.fab.fa-instagram{
+    float:left;
+    margin-left: 35px;
+}
+.fab.fa-github{
+    float:right;
+    margin-right: 35px;
+}
+a i{
+    color: white;
+}
+
+/*Media queris*/
+
+/*Pantallas menores a 900px de ancho*/
+@media (max-width: 900px){
+  
+}
+
+/*Pantallas menores a 570px*/
+@media (max-width: 570px){
+    
+}
+
+/*Pantallas menores a 420px de ancho*/
+@media only screen and (max-width: 400px){
+    p{
+        font-size: 18px;
+    }
+}
+
+/*Pantallas mayores a 900px de ancho*/
+@media only screen and (min-width: 900px){
+    .fas{
+        display: none;
+    }
+    
+    input{
+        width: 500px;
+        height: 34px;
+    }
+    .title{
+        padding-top: 10px;
+    }
+    .intro{
+        font-size: 25px;
+    }
+    .parragraph{
+        padding-top: 22px
+    }
+}
